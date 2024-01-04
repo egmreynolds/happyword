@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Word Display</title>
+</head>
+<body>
+    <div id="word-container" onclick="toggleDisplay()">
+        <p id="word">{{ word }}</p>
+    </div>
+    <div id="definition-container" class="hidden">
+        <p id="definition">{{ definition }}</p>
+        <p id="example1" class="hidden">{{ example1 }}</p>
+        <p id="example2" class="hidden">{{ example2 }}</p>
+        <div id="buttons-container">
+            <button id="examples-button" onclick="showExamples()">Examples</button>
+            <button onclick="showSpotify()">Spotify</button>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
